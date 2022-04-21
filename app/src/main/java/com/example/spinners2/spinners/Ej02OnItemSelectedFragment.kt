@@ -1,4 +1,4 @@
-package com.example.spinners2
+package com.example.spinners2.spinners
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

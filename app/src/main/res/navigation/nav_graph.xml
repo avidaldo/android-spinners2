@@ -7,16 +7,20 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.spinners2.FirstFragment"
+        android:name="com.example.spinners2.MainFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_FirstFragment_to_SpinnersFragment"
             app:destination="@id/SpinnersFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_autocompletarFragment"
+            app:destination="@id/autocompletarFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/SpinnersFragment"
-        android:name="com.example.spinners2.SpinnersFragment"
+        android:name="com.example.spinners2.spinners.SpinnersFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_spinners">
         <action
@@ -25,13 +29,68 @@
         <action
             android:id="@+id/action_SpinnersFragment_to_ej02OnItemSelectedFragment"
             app:destination="@id/ej02OnItemSelectedFragment" />
+        <action
+            android:id="@+id/action_SpinnersFragment_to_ej03FromArrayFragment"
+            app:destination="@id/ej03FromArrayFragment" />
+        <action
+            android:id="@+id/action_SpinnersFragment_to_ej04FromResourceFragment"
+            app:destination="@id/ej04FromResourceFragment" />
+        <action
+            android:id="@+id/action_SpinnersFragment_to_ej05FromArrayListFragment"
+            app:destination="@id/ej05FromArrayListFragment" />
+        <action
+            android:id="@+id/action_SpinnersFragment_to_ej06Fragment"
+            app:destination="@id/ej06Fragment" />
     </fragment>
     <fragment
         android:id="@+id/ej01EntriesFragment"
-        android:name="com.example.spinners2.Ej01EntriesFragment"
+        android:name="com.example.spinners2.spinners.Ej01EntriesFragment"
         android:label="Ej01EntriesFragment" />
     <fragment
         android:id="@+id/ej02OnItemSelectedFragment"
-        android:name="com.example.spinners2.Ej02OnItemSelectedFragment"
+        android:name="com.example.spinners2.spinners.Ej02OnItemSelectedFragment"
         android:label="Ej02OnItemSelectedFragment" />
+    <fragment
+        android:id="@+id/ej03FromArrayFragment"
+        android:name="com.example.spinners2.spinners.Ej03FromArrayFragment"
+        android:label="Ej03FromArrayFragment" />
+    <fragment
+        android:id="@+id/ej04FromResourceFragment"
+        android:name="com.example.spinners2.spinners.Ej04FromResourceFragment"
+        android:label="Ej04FromResourceFragment" />
+    <fragment
+        android:id="@+id/ej05FromArrayListFragment"
+        android:name="com.example.spinners2.spinners.Ej05FromArrayListFragment"
+        android:label="Ej05FromArrayListFragment" />
+    <fragment
+        android:id="@+id/ej06Fragment"
+        android:name="com.example.spinners2.spinners.Ej06Fragment"
+        android:label="Ej06Fragment" />
+    <fragment
+        android:id="@+id/autocompletarFragment"
+        android:name="com.example.spinners2.autocompletar.AutocompletarFragment"
+        android:label="fragment_autocompletar"
+        tools:layout="@layout/fragment_autocompletar" >
+        <action
+            android:id="@+id/action_autocompletarFragment_to_ej01AutocompFragment"
+            app:destination="@id/ej01AutocompFragment" />
+        <action
+            android:id="@+id/action_autocompletarFragment_to_ej02AutocompFragment"
+            app:destination="@id/ej02AutocompFragment" />
+        <action
+            android:id="@+id/action_autocompletarFragment_to_ej03AutocompFragment"
+            app:destination="@id/ej03AutocompFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ej01AutocompFragment"
+        android:name="com.example.spinners2.autocompletar.Ej01AutocompFragment"
+        android:label="Ej01AutocompFragment" />
+    <fragment
+        android:id="@+id/ej02AutocompFragment"
+        android:name="com.example.spinners2.autocompletar.Ej02AutocompFragment"
+        android:label="Ej02AutocompFragment" />
+    <fragment
+        android:id="@+id/ej03AutocompFragment"
+        android:name="com.example.spinners2.autocompletar.Ej03AutocompFragment"
+        android:label="Ej03AutocompFragment" />
 </navigation>

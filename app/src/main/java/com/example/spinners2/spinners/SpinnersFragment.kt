@@ -1,4 +1,4 @@
-package com.example.spinners2
+package com.example.spinners2.spinners
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -32,16 +32,23 @@ class SpinnersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnSeleccion.setOnClickListener {
-            findNavController().navigate(
-                when (binding.spinner.selectedItemPosition) {
-                    0 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj01EntriesFragment()
-                    1 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
-                    else -> throw Exception("Opción no existente")
-                }
-
-
-            )
+            navToExample()
         }
 
+    }
+
+
+    private fun navToExample() {
+        findNavController().navigate(
+            when (binding.spinner.selectedItemPosition) {
+                0 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj01EntriesFragment()
+                1 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                2 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                3 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                4 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                5 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                else -> throw Exception("Ejemplo no existente")
+            }
+        )
     }
 }
