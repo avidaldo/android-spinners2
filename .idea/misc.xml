@@ -3,17 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/avidaldo/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/avidaldo/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/chachi_spinner_item.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_autocompletar.xml" value="0.1" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_second.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej01.xml" value="0.30416666666666664" />
-        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.1" />
-        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_autocompletar.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinners.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.33" />
+        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.2994871794871795" />
+        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/item_guay.xml" value="0.2" />
       </map>
     </option>
   </component>

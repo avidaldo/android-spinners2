@@ -34,4 +34,5 @@ class Ej04FromResourceFragment : Fragment() {
 
 
     }
+
 }

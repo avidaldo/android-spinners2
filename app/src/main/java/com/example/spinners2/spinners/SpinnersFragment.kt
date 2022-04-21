@@ -43,7 +43,7 @@ class SpinnersFragment : Fragment() {
             when (binding.spinner.selectedItemPosition) {
                 0 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj01EntriesFragment()
                 1 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
-                2 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                2 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj03FromArrayFragment()
                 3 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
                 4 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
                 5 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
