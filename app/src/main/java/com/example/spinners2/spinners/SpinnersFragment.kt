@@ -44,9 +44,9 @@ class SpinnersFragment : Fragment() {
                 0 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj01EntriesFragment()
                 1 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
                 2 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj03FromArrayFragment()
-                3 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
-                4 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
-                5 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj02OnItemSelectedFragment()
+                3 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj04FromResourceFragment()
+                4 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj05FromArrayListFragment()
+                5 -> SpinnersFragmentDirections.actionSpinnersFragmentToEj06Fragment()
                 else -> throw Exception("Ejemplo no existente")
             }
         )

@@ -12,4 +12,14 @@
     <string name="spinners">Spinners</string>
     <string name="autocompletar">Autocompletar</string>
     <string name="seleccionar">Seleccionar</string>
+
+
+    <string name="EjSpinner">EjSpinner</string>
+    <string name="country_prompt">Elige pais</string>
+    <string name="item_prompt">Selecciona elemento:</string>
+    <string name="botonEleccion">Pulsa para ver tu elección</string>
+    <string name="provincias_y_localidades">PROVINCIAS Y LOCALIDADES</string>
+    <string name="provincia">Provincia</string>
+    <string name="localidade">Localidade</string>
+    <string name="no_app_error">App no encontrada</string>
 </resources>

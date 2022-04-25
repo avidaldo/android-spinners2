@@ -11,7 +11,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.spinners2.databinding.ActivityMainBinding
 
 
-//TODO: Probar elemento vacío e intentar cambiar id a elemento de spinner
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

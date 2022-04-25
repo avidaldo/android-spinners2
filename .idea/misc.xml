@@ -15,10 +15,15 @@
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.33" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.2994871794871795" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/item_guay.xml" value="0.2" />
+        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.259375" />
+        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej06.xml" value="0.259375" />
+        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej07.xml" value="0.259375" />
+        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinners.xml" value="0.12129629629629629" />
+        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/item_guay.xml" value="0.259375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
