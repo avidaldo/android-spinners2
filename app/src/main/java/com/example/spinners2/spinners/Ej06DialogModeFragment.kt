@@ -1,7 +1,6 @@
 package com.example.spinners2.spinners
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,8 +17,8 @@ class Ej06DialogModeFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?,
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?,
     ): View {
         _binding = FragmentSpinnerEj06Binding.inflate(inflater, container, false)
         return binding.root
@@ -37,7 +36,6 @@ class Ej06DialogModeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-
         /** Spinner 1 *****************************/
 
         /* Selecciona el primer elemento antes de setear el escuchador, evitando que este salte en
@@ -50,33 +48,33 @@ class Ej06DialogModeFragment : Fragment() {
         binding.spinner61.onItemSelectedListener = CustomOnItemSelectedListener()
 
 
-
         /** Spinner 2 *****************************/
 
-        val arrayList: MutableList<String> = ArrayList()  // Añadimos items dinámicamente al segundo spinner
+        val arrayList: MutableList<String> =
+            ArrayList()  // Añadimos items dinámicamente al segundo spinner
         arrayList.add("elemento 1")
         arrayList.add("elemento 2")
         arrayList.add("elemento 3")
 
         // El ArrayAdapter es el intermediario entre el arraylist y el AdapterView (el spinner)
-        val arrayAdapter = ArrayAdapter(requireActivity(), android.R.layout.simple_list_item_1, arrayList )
-        arrayAdapter.setDropDownViewResource(R.layout.item_guay)
-        binding.spinner62.adapter = arrayAdapter
+        binding.spinner62.adapter = ArrayAdapter(
+            requireContext(),
+            android.R.layout.simple_list_item_1,
+            arrayList
+        ).apply { setDropDownViewResource(R.layout.item_guay) }
 
         /* Seteamos programáticamente un título para el spinner, que se mostrará
         ya que está definido en modo "dialog" */
         binding.spinner62.prompt = resources.getString(R.string.item_prompt)
 
 
-
         /** Spinner 3 *****************************/
 
         binding.spinner63.adapter = ArrayAdapter.createFromResource(
-            requireActivity(),
+            requireContext(),
             R.array.array_paises,
             android.R.layout.simple_spinner_dropdown_item
-        )
-
+        ).apply { setDropDownViewResource(R.layout.item_guay) }
 
 
         /** Botón *****************************/

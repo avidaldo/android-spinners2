@@ -43,7 +43,7 @@ class Ej03FromArrayFragment : Fragment() {
         /* El ArrayAdapter la abstracción intermedia que relaciona el array con el listado de elementos
         * del spinner */
         val arrayAdapter = ArrayAdapter(
-            requireActivity(),
+            requireContext(),
             /* El segundo parámetro es el layout con el diseño del elemento cuando está seleccionado */
             //android.R.layout.simple_list_item_1,
             R.layout.item_guay,

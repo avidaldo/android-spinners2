@@ -1,6 +1,5 @@
 package com.example.spinners2.spinners
 
-import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,7 +34,7 @@ class Ej02OnItemSelectedFragment : Fragment() {
 
         /* Selecciona el primer elemento antes de setear el escuchador, evitando que este salte en
         el momento en el que se carga de elementos */
-        binding.spinner2.setSelection(0,false)
+        binding.spinner2.setSelection(0, false)
 
         /* Seteamos un escuchador para el evento de cambio de evento seleccionado
         en el spinner. */
@@ -46,16 +45,15 @@ class Ej02OnItemSelectedFragment : Fragment() {
                 position: Int,
                 id: Long
             ) {
-                //if (position!=0) {
-                    binding.textViewElection.visibility=View.VISIBLE
-                    binding.textViewId.visibility=View.VISIBLE
-                    binding.textViewPosition.visibility=View.VISIBLE
+                binding.textViewElection.visibility = View.VISIBLE
+                binding.textViewId.visibility = View.VISIBLE
+                binding.textViewPosition.visibility = View.VISIBLE
 
-                    binding.textViewElection.text = "Elección: ${(view as TextView).text}"
-                    //binding.textViewElection.text = "Elección: ${parent.selectedItem}"  // Otro modo de acceder
-                    binding.textViewId.text = "Id: $id"
-                    binding.textViewPosition.text = "Posición: $position"
-               // }
+                binding.textViewElection.text = "Elección: ${(view as TextView).text}"
+                //binding.textViewElection.text = "Elección: ${parent.selectedItem}"  // Otro modo de acceder
+                binding.textViewId.text = "Id: $id"
+                binding.textViewPosition.text = "Posición: $position"
+
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}

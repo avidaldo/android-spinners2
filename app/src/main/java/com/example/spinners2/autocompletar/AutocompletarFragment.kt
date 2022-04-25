@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.spinners2.databinding.FragmentAutocompletarBinding
-import com.example.spinners2.spinners.SpinnersFragmentDirections
 
 
 class AutocompletarFragment : Fragment() {
@@ -36,10 +35,10 @@ class AutocompletarFragment : Fragment() {
         binding.btnEj01.setOnClickListener {
             findNavController().navigate(AutocompletarFragmentDirections.actionAutocompletarFragmentToEj01AutocompFragment())
         }
-        binding.btnEj02.setOnClickListener {
+        binding.btnEj02a.setOnClickListener {
             findNavController().navigate(AutocompletarFragmentDirections.actionAutocompletarFragmentToEj02AutocompFragment())
         }
-        binding.btnEj022.setOnClickListener {
+        binding.btnEj02b.setOnClickListener {
             findNavController().navigate(AutocompletarFragmentDirections.actionAutocompletarFragmentToEj03AutocompFragment())
         }
 

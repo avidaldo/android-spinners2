@@ -45,9 +45,7 @@ class Ej05FromArrayListFragment : Fragment() {
         planetas.add("Urano")
         planetas.add("Neptuno")
 
-        val adapter = ArrayAdapter(requireActivity(), R.layout.simple_spinner_item, planetas)
-
-        binding.spinner3.adapter = adapter
+        binding.spinner3.adapter = ArrayAdapter(requireActivity(), R.layout.simple_spinner_item, planetas)
 
         binding.spinner3.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(

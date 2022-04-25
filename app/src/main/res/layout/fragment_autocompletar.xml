@@ -12,15 +12,15 @@
         android:text="Ejemplo 01" />
 
     <Button
-        android:id="@+id/btn_ej02"
+        android:id="@+id/btn_ej02a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ejemplo 02" />
+        android:text="Ejemplo 02a" />
 
     <Button
-        android:id="@+id/btn_ej022"
+        android:id="@+id/btn_ej02b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ejemplo 022" />
+        android:text="Ejemplo 02b" />
 
 </LinearLayout>

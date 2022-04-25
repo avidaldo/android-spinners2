@@ -3,13 +3,11 @@ package com.example.spinners2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.spinners2.databinding.ActivityMainBinding
-
 
 
 class MainActivity : AppCompatActivity() {

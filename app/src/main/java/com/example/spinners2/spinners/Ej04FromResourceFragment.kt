@@ -37,7 +37,7 @@ class Ej04FromResourceFragment : Fragment() {
 
         // Creando el adaptador desde un recurso
         binding.spinner3.adapter = ArrayAdapter.createFromResource(
-            requireActivity(), R.array.planetas, android.R.layout.simple_spinner_dropdown_item
+            requireContext(), R.array.planetas, android.R.layout.simple_spinner_dropdown_item
         )
 
         binding.spinner3.onItemSelectedListener = object: OnItemSelectedListener {
