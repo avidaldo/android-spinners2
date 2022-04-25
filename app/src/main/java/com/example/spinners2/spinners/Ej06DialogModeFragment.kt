@@ -36,6 +36,9 @@ class Ej06Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        
+
+        /** Spinner 1 *****************************/
 
         /* Selecciona el primer elemento antes de setear el escuchador, evitando que este salte en
         el momento en el que se carga de elementos */
@@ -45,17 +48,18 @@ class Ej06Fragment : Fragment() {
 		En este caso, se está definiendo el escuchador en otra clase */
         binding.spinner61.onItemSelectedListener = CustomOnItemSelectedListener()
 
+
+
+
+        /** Spinner 2 *****************************/
+
         val arrayList: MutableList<String> = ArrayList()  // Añadimos items dinámicamente al segundo spinner
         arrayList.add("elemento 1")
         arrayList.add("elemento 2")
         arrayList.add("elemento 3")
 
         // El ArrayAdapter es el intermediario entre el arraylist y el AdapterView (el spinner)
-        val arrayAdapter = ArrayAdapter(
-            requireActivity(),
-            android.R.layout.simple_list_item_1,
-            arrayList
-        )
+        val arrayAdapter = ArrayAdapter(requireActivity(), android.R.layout.simple_list_item_1, arrayList )
         arrayAdapter.setDropDownViewResource(R.layout.item_guay)
         binding.spinner62.adapter = arrayAdapter
 
@@ -92,7 +96,7 @@ class Ej06Fragment : Fragment() {
          *                    En general, se trata de views consistententes en listados de elementos)
          * @param view        Vista concreta del elemento (el elemento TextView que se pulsa dentro del spinner.
          * @param posicion    la posición del elemento en el adaptador
-         * @param id          la id de la fila seleccionada
+         * @param id          el id de la fila seleccionada
          */
         override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
             Toast.makeText(
