@@ -3,27 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/avidaldo/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.30416666666666664" />
-        <entry key="..\:/Users/avidaldo/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/chachi_spinner_item.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_autocompletar.xml" value="0.1" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_second.xml" value="0.30416666666666664" />
         <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej01.xml" value="0.30416666666666664" />
-        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.33" />
-        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.2994871794871795" />
-        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/item_guay.xml" value="0.2" />
-        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.259375" />
-        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej06.xml" value="0.259375" />
-        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej07.xml" value="0.259375" />
-        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinners.xml" value="0.12129629629629629" />
-        <entry key="..\:/pmdm/android-spinners2/app/src/main/res/layout/item_guay.xml" value="0.259375" />
+        <entry key="..\:/Users/avidaldo/pmdm/Spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.1" />
+        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_autocompletar.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej02.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej03.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinner_ej06.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/avidaldo/pmdm/android-spinners2/app/src/main/res/layout/fragment_spinners.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

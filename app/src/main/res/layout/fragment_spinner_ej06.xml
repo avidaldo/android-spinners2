@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,48 +10,60 @@
     <Spinner
         android:id="@+id/spinner61"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+
+        android:entries="@array/array_paises"
 
         android:spinnerMode="dialog"
         android:prompt="@string/country_prompt"
 
-        android:entries="@array/array_paises"
+        app:layout_constraintBottom_toTopOf="@id/spinner62"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/spinner62" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- En el segundo spinner de nuevo lo pondremos en modo "dialog" pero
-    el prompt lo setearemos desde Java -->
+    el prompt lo setearemos desde el fragment -->
     <Spinner
         android:id="@+id/spinner62"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+
+        android:contentDescription="Descripción Spinner62"
 
         android:spinnerMode="dialog"
-
+        app:layout_constraintBottom_toTopOf="@id/spinner63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinner61"
-        app:layout_constraintBottom_toTopOf="@id/spinner63"/>
+        app:layout_constraintTop_toBottomOf="@id/spinner61" />
 
     <Spinner
         android:id="@+id/spinner63"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+        android:contentDescription="Descripción Spinner63"
+        app:layout_constraintBottom_toTopOf="@id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinner62"
-        app:layout_constraintBottom_toTopOf="@id/btnSubmit" />
+        app:layout_constraintTop_toBottomOf="@id/spinner62" />
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@id/tv_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner63" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner62" />
+        app:layout_constraintTop_toBottomOf="@id/btnSubmit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

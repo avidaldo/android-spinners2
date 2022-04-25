@@ -33,12 +33,9 @@ class Ej02OnItemSelectedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        /** */
-        binding.spinner2.setSelection(0, false)
-
         /* Selecciona el primer elemento antes de setear el escuchador, evitando que este salte en
         el momento en el que se carga de elementos */
-        //binding.spinner2.setSelection(0,false)
+        binding.spinner2.setSelection(0,false)
 
         /* Seteamos un escuchador para el evento de cambio de evento seleccionado
         en el spinner. */

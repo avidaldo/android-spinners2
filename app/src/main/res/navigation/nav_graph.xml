@@ -64,7 +64,7 @@
         android:label="Ej05FromArrayListFragment" />
     <fragment
         android:id="@+id/ej06Fragment"
-        android:name="com.example.spinners2.spinners.Ej06Fragment"
+        android:name="com.example.spinners2.spinners.Ej06DialogModeFragment"
         android:label="Ej06Fragment" />
     <fragment
         android:id="@+id/autocompletarFragment"

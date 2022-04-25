@@ -8,12 +8,11 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import android.widget.Toast
 import com.example.spinners2.R
 import com.example.spinners2.databinding.FragmentSpinnerEj06Binding
 import java.util.ArrayList
 
-class Ej06Fragment : Fragment() {
+class Ej06DialogModeFragment : Fragment() {
     private var _binding: FragmentSpinnerEj06Binding? = null
     private val binding get() = _binding!!
 
@@ -36,7 +35,7 @@ class Ej06Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        
+
 
         /** Spinner 1 *****************************/
 
@@ -45,9 +44,9 @@ class Ej06Fragment : Fragment() {
         binding.spinner61.setSelection(0, false)
 
         /* Se le asigna al primer spinner el escuchador para cuando se seleciona uno de sus elementos.
-		En este caso, se está definiendo el escuchador en otra clase */
+		En este caso, se está definiendo el escuchador en la clase CustomOnItemSelectedListener en
+		lugar de usar una clase anónima. */
         binding.spinner61.onItemSelectedListener = CustomOnItemSelectedListener()
-
 
 
 
@@ -67,27 +66,36 @@ class Ej06Fragment : Fragment() {
         ya que está definido en modo "dialog" */
         binding.spinner62.prompt = resources.getString(R.string.item_prompt)
 
+
+
+        /** Spinner 3 *****************************/
+
         binding.spinner63.adapter = ArrayAdapter.createFromResource(
             requireActivity(),
             R.array.array_paises,
             android.R.layout.simple_spinner_dropdown_item
         )
 
+
+
+        /** Botón *****************************/
+
         binding.btnSubmit.setOnClickListener {
-            Toast.makeText(
-                requireActivity(),
-                """OnClickListener : 
+            binding.tvResultado.text = """OnClickListener : 
                 Spinner 1 : ${binding.spinner61.selectedItem}
-                Spinner 2 : ${binding.spinner61.selectedItem}
-                """.trimIndent(),
-                Toast.LENGTH_SHORT
-            ).show()
+                Spinner 2 : ${binding.spinner62.selectedItem}
+                Spinner 3 : ${binding.spinner63.selectedItem}
+                """.trimIndent()
         }
 
 
     }
 
-    class CustomOnItemSelectedListener : AdapterView.OnItemSelectedListener {
+
+    /** Clase que implementa OnItemSelectedListener.
+     * Defino la clase como inner class para que tenga acceso a las propiedades de la clase externa (al binding)
+     * https://kotlinlang.org/docs/nested-classes.html */
+    inner class CustomOnItemSelectedListener : AdapterView.OnItemSelectedListener {
         /**
          * Método de callback al que se invoca cuando se selecciona un elemento de un listado (el spinner1, en este caso)
          *
@@ -99,14 +107,10 @@ class Ej06Fragment : Fragment() {
          * @param id          el id de la fila seleccionada
          */
         override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-            Toast.makeText(
-                parent?.context,
-                """OnItemSelectedListener:
+            binding.tvResultado.text = """OnItemSelectedListener:
                 ${parent?.getItemAtPosition(position)}
                 ${(view as TextView).text}
-                """.trimIndent(),  // Dos modos de hacer lo mismo
-                Toast.LENGTH_SHORT
-            ).show()
+                """.trimIndent()
         }
 
         override fun onNothingSelected(parent: AdapterView<*>?) {}
