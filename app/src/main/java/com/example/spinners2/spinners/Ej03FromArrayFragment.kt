@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.TextView
 import com.example.spinners2.R
 import com.example.spinners2.databinding.FragmentSpinnerEj03Binding
 
@@ -65,9 +66,13 @@ class Ej03FromArrayFragment : Fragment() {
             override fun onItemSelected(
                 parent: AdapterView<*>, view: View, position: Int, id: Long
             ) {
-                binding.textViewElection.text = "Elección: ${parent.selectedItem}"
-                binding.textViewId.text = "Id: $id"
-                binding.textViewPosition.text = "Posición: $position"
+                binding.tvResultado.text = """OnItemSelectedListener:
+                parent.selectedItem = ${parent.selectedItem}
+                parent?.getItemAtPosition(position) = ${parent.getItemAtPosition(position)}
+                (view as TextView).text = ${(view as TextView).text}
+                position = $position
+                id = $id
+                """.trimIndent()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}

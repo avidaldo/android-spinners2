@@ -1,6 +1,7 @@
 package com.example.spinners2.spinners
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -106,10 +107,14 @@ class Ej06DialogModeFragment : Fragment() {
          * @param posicion    la posición del elemento en el adaptador
          * @param id          el id de la fila seleccionada
          */
-        override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+
             binding.tvResultado.text = """OnItemSelectedListener:
-                ${parent?.getItemAtPosition(position)}
-                ${(view as TextView).text}
+                parent.selectedItem = ${parent.selectedItem}
+                parent?.getItemAtPosition(position) = ${parent.getItemAtPosition(position)}
+                (view as TextView).text = ${(view as TextView).text}
+                position = $position
+                id = $id
                 """.trimIndent()
         }
 
