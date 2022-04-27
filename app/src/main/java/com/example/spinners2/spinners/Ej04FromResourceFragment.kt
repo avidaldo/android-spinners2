@@ -36,9 +36,13 @@ class Ej04FromResourceFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Creando el adaptador desde un recurso
-        binding.spinner3.adapter = ArrayAdapter.createFromResource(
-            requireContext(), R.array.planetas, android.R.layout.simple_spinner_dropdown_item
+        val adapter = ArrayAdapter.createFromResource(
+            requireContext(), R.array.planetas, R.layout.item_guay
         )
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        binding.spinner3.adapter = adapter
 
         binding.spinner3.onItemSelectedListener = object: OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {

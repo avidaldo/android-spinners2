@@ -31,8 +31,7 @@ class Ej01AutocompFragment : Fragment() {
     /***********************************************************/
 
 
-    private val arrayNombres =
-        arrayOf("Abel", "Ana", "Anacleto", "Anastasio", "Anastasia", "Anibal", "Antonio")
+    private val arrayNombres = resources.getStringArray(R.array.nombres)
     private val listaNombres = listOf(*arrayNombres)
 
 

@@ -1,16 +1,17 @@
 package com.example.spinners2.spinners
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.example.spinners2.R
 import com.example.spinners2.databinding.FragmentSpinnerEj06Binding
-import java.util.ArrayList
 
 class Ej06DialogModeFragment : Fragment() {
     private var _binding: FragmentSpinnerEj06Binding? = null
@@ -57,15 +58,18 @@ class Ej06DialogModeFragment : Fragment() {
         arrayList.add("elemento 3")
 
         // El ArrayAdapter es el intermediario entre el arraylist y el AdapterView (el spinner)
-        binding.spinner62.adapter = ArrayAdapter(
-            requireContext(),
-            android.R.layout.simple_list_item_1,
-            arrayList
-        ).apply { setDropDownViewResource(R.layout.item_guay) }
 
-        /* Seteamos programáticamente un título para el spinner, que se mostrará
-        ya que está definido en modo "dialog" */
-        binding.spinner62.prompt = resources.getString(R.string.item_prompt)
+        binding.spinner62
+            .apply {
+                adapter = ArrayAdapter(
+                    requireContext(),
+                    android.R.layout.simple_list_item_1,
+                    arrayList
+                ).apply { setDropDownViewResource(R.layout.item_guay) }
+            }
+            /* Seteamos programáticamente un título para el spinner, que se mostrará
+            ya que está definido en modo "dialog" */
+            .apply { prompt = resources.getString(R.string.item_prompt) }
 
 
         /** Spinner 3 *****************************/
@@ -81,12 +85,11 @@ class Ej06DialogModeFragment : Fragment() {
 
         binding.btnSubmit.setOnClickListener {
             binding.tvResultado.text = """OnClickListener : 
-                Spinner 1 : ${binding.spinner61.selectedItem}
-                Spinner 2 : ${binding.spinner62.selectedItem}
-                Spinner 3 : ${binding.spinner63.selectedItem}
-                """.trimIndent()
+                    Spinner 1 : ${binding.spinner61.selectedItem}
+                    Spinner 2 : ${binding.spinner62.selectedItem}
+                    Spinner 3 : ${binding.spinner63.selectedItem}
+                    """.trimIndent()
         }
-
 
     }
 
@@ -116,7 +119,8 @@ class Ej06DialogModeFragment : Fragment() {
                 """.trimIndent()
         }
 
-        override fun onNothingSelected(parent: AdapterView<*>?) {}
+        // TODO: No sé cuándo se usa este método
+        override fun onNothingSelected(parent: AdapterView<*>?) { }
     }
 
 }
