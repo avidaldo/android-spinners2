@@ -33,6 +33,10 @@ class Ej01AutocompFragment : Fragment() {
 
     private val arrayNombres = resources.getStringArray(R.array.nombres)
     private val listaNombres = listOf(*arrayNombres)
+    /* El operador * (spread operador) convierte un array en varargs (múltiples argumentos)
+    para funciones que reciben un número variable de argumentos.
+    https://stackoverflow.com/questions/39389003/kotlin-asterisk-operator-before-variable-name-or-spread-operator-in-kotlin
+     */
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
