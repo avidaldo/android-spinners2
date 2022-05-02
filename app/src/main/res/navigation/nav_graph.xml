@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_MainFragment_to_autocompletarFragment"
             app:destination="@id/AutocompletarFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ej01ListViewFragment"
+            app:destination="@id/ej01ListViewFragment" />
     </fragment>
 
     <fragment
@@ -93,4 +96,9 @@
         android:id="@+id/ej02bAutocompFragment"
         android:name="com.example.spinners2.autocompletar.Ej02bAutocompFragment"
         android:label="Ej02bAutocompFragment" />
+    <fragment
+        android:id="@+id/ej01ListViewFragment"
+        android:name="com.example.spinners2.listviews.Ej01ListViewFragment"
+        android:label="fragment_listview_ej01"
+        tools:layout="@layout/fragment_listview_ej01" />
 </navigation>

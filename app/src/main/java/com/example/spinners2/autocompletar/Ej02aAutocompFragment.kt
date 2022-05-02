@@ -100,7 +100,7 @@ class Ej02aAutocompFragment : Fragment() {
                         }
                 }
 
-        } ?: showEmpty()
+        } ?: showEmpty() // Si el array es null
 
     }
 

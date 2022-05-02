@@ -32,6 +32,10 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnListview.setOnClickListener {
+            findNavController().navigate(R.id.action_MainFragment_to_ej01ListViewFragment)
+        }
+
         binding.btnSpinners.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_SpinnersFragment)
         }

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import android.widget.Toast
 import com.example.spinners2.R
 import com.example.spinners2.databinding.FragmentSpinnerEj03Binding
 
@@ -60,7 +61,7 @@ class Ej03FromArrayFragment : Fragment() {
         // Utilizando un adaptador podemos cargar los elementos dinámicamente en el spinner
         binding.spinner3.adapter = arrayAdapter
 
-        binding.spinner3.setSelection(0, false)
+       // binding.spinner3.setSelection(0, false)
 
         binding.spinner3.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
@@ -75,10 +76,11 @@ class Ej03FromArrayFragment : Fragment() {
                 """.trimIndent()
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {}
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(requireContext(), "onNothingSelected", Toast.LENGTH_SHORT).show()
+            }
         }
     }
-
 
 
 }

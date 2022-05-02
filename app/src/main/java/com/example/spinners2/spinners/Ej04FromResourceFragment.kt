@@ -9,6 +9,7 @@ import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import android.widget.Toast
 import com.example.spinners2.R
 import com.example.spinners2.databinding.FragmentSpinnerEj03Binding
 
@@ -55,7 +56,9 @@ class Ej04FromResourceFragment : Fragment() {
                 """.trimIndent()
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {}
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                Toast.makeText(requireContext(), "onNothingSelected", Toast.LENGTH_SHORT).show()
+            }
 
         }
 

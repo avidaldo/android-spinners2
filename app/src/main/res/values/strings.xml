@@ -15,4 +15,6 @@
     <string name="localidade">Localidade</string>
     <string name="no_app_error">App no encontrada</string>
     <string name="spinner62">spinner62</string>
+    <string name="listviews">ListViews</string>
+    <string name="dialog_title">AlertDialog</string>
 </resources>
