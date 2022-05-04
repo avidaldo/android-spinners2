@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.core.widget.doOnTextChanged
 import com.example.spinners2.R
 import com.example.spinners2.databinding.FragmentAutocompletado2bBinding
 
@@ -38,26 +39,28 @@ class Ej02bAutocompFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.actvProvincias
-            .apply {
-                setAdapter(
-                    ArrayAdapter.createFromResource(
-                        requireContext(), R.array.provincias_espana,
-                        android.R.layout.simple_spinner_item
-                    )
+        with(binding.actvProvincias) {
+            setAdapter(
+                ArrayAdapter.createFromResource(
+                    requireContext(), R.array.provincias_espana,
+                    android.R.layout.simple_spinner_item
                 )
+            )
+            setOnItemClickListener { parent, view, position, id ->
+                onSelectProvincia(text)
+                // Accedemos al text de actvProvincias para no tener que castear view ?
             }
-            .apply {
-                setOnItemClickListener { parent, view, position, id ->
-                    onSelectProvincia(text.toString())
-                }
+            doOnTextChanged { text0, start, before, count ->
+                onSelectProvincia(text0!!)  // TODO: nullable?
             }
+
+        }
 
     }
 
-    private fun onSelectProvincia(provinciaString: String) {
+    private fun onSelectProvincia(provinciaString: CharSequence) {
         cargarLocalidadesSpinner(
-            when (provinciaString) {
+            when (provinciaString.toString()) {
                 "A Coruña" -> R.array.ciudades_corunha
                 "Lugo" -> R.array.ciudades_lugo
                 "Ourense" -> R.array.ciudades_ourense
