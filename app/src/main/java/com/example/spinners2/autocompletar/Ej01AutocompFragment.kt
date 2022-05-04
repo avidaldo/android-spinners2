@@ -35,12 +35,7 @@ class Ej01AutocompFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val arrayNombres = resources.getStringArray(R.array.nombres)
-        val listaNombres = listOf(*arrayNombres)
-        /* El operador * (spread operador) convierte un array en varargs (múltiples argumentos)
-        para funciones que reciben un número variable de argumentos.
-        https://stackoverflow.com/questions/39389003/kotlin-asterisk-operator-before-variable-name-or-spread-operator-in-kotlin
-         */
-
+        val listaNombres = arrayNombres.asList()
 
         val adapter1 = ArrayAdapter( // Cargando desde el Array
             requireContext(), android.R.layout.select_dialog_item, arrayNombres
