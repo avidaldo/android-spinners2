@@ -76,7 +76,7 @@ class Ej02bAutocompFragment : Fragment() {
                 .apply {
                     adapter = ArrayAdapter.createFromResource(
                         requireContext(),
-                        recurso,
+                        it,
                         android.R.layout.simple_spinner_dropdown_item
                     )
                 }

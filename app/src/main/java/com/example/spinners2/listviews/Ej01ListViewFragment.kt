@@ -45,7 +45,7 @@ class Ej01ListViewFragment : Fragment() {
         binding.lista01
             .apply { this.adapter = adapter }
             .apply {
-                setOnItemClickListener { parent, view, position, id ->
+                setOnItemClickListener { _, view, _, _ ->
                     showNotification("Click en ${(view as TextView).text}")
                 }
             }
