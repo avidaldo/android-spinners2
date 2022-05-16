@@ -33,15 +33,15 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnListview.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_ej01ListViewFragment)
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToEj01ListViewFragment())
         }
 
         binding.btnSpinners.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_SpinnersFragment)
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToSpinnersFragment())
         }
 
         binding.btnAutocompletar.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_autocompletarFragment)
+            findNavController().navigate(MainFragmentDirections.actionMainFragmentToAutocompletarFragment())
         }
     }
 
